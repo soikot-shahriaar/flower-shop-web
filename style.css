@@ -2,7 +2,7 @@
 body {
   font-family: "Lato", sans-serif;
 }
-.btn-primary {
+.btn-shop {
   display: inline-flex;
   padding: 18px 38px;
   align-items: flex-start;
@@ -13,6 +13,11 @@ body {
   font-size: 15px;
   font-weight: 400;
   border: 0;
+}
+.pink-color {
+  color: #e55473;
+  font-size: 27px;
+  font-weight: 800;
 }
 
 /* first css styles */
@@ -64,6 +69,15 @@ body {
   line-height: 30px;
   margin-bottom: 30px;
 }
+.second-pictures {
+  display: flex;
+  justify-content: center;
+  padding: 0px 180px;
+}
+/* .second-pictures img {
+  height: 100%;
+  width: auto;
+} */
 .sec-pic-1 {
   border-radius: 300px 300px 0px 0px;
   background: rgba(167, 33, 98, 0.15);
@@ -81,14 +95,12 @@ body {
   background: rgba(71, 125, 17, 0.15);
   width: 33%;
 }
-.second-pictures {
+.sec-pic-1 , .sec-pic-2, .sec-pic-3 img {
+  height: 70%;
+  width: 70%;
   display: flex;
-  padding: 0px 180px;
-  align-items: stretch;
-}
-.second-pictures img {
-  height: 100%;
-  width: auto;
+  align-items: center;
+  padding: 40px 0px;
 }
 .sec-pic-caption {
   color: #272727;
@@ -97,3 +109,56 @@ body {
   font-weight: 700;
   text-decoration-line: underline;
 }
+
+/* third css styles */
+
+/* fourth css styles */
+.fourth {
+  margin-top: 180px;
+  border-radius: 8px;
+  background: rgba(229, 84, 115, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 70px 200px;
+  margin-bottom: 180px;
+}
+.fourth-heading {
+  color: #272727;
+  font-size: 27px;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.fourth-writings {
+  color: rgba(39, 39, 39, 0.6);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+.fourth-description {
+  width: 50%;
+  align-items: center;
+}
+.fourth-picture {
+  width: 50%;
+  align-items: center;
+  margin-left: 150px;
+}
+.btn-sign {
+  padding: 18px 38px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 6px;
+  background: #e55473;
+  color: white;
+  font-size: 15px;
+  font-weight: 400;
+  border: 0;
+}
+
+
+/* fifth css styles */
