@@ -2,10 +2,15 @@
 body {
   font-family: "Lato", sans-serif;
 }
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
 
 /* bonus css styles */
-.bonus{
-  background-color:rgba(229, 84, 115, 0.10);;
+.bonus {
+  background-color: rgba(229, 84, 115, 0.1);
 }
 nav {
   display: flex;
@@ -18,7 +23,6 @@ nav h3 {
   font-size: 90px;
   font-weight: 800;
 }
-
 nav > ul {
   display: flex;
   align-items: center;
@@ -32,7 +36,7 @@ nav li {
 nav a {
   text-decoration: none;
 }
-.bonus-sp-color{
+.bonus-sp-color {
   color: #e55473;
   font-size: 90px;
   font-weight: 800;
@@ -51,7 +55,7 @@ nav a {
 }
 
 
-/* first css styles */
+/* first css styles -- introduction */
 .first {
   background-color: rgba(229, 84, 115, 0.1);
   display: flex;
@@ -95,7 +99,9 @@ nav a {
   font-weight: 400;
   border: 0;
 }
-/* second css styles */
+
+
+/* second css styles -- featured flower */
 .second-heading {
   color: #272727;
   text-align: center;
@@ -114,43 +120,51 @@ nav a {
 .second-pictures {
   display: flex;
   justify-content: center;
-  padding: 0px 180px;
-}
-.sec-pic-1 {
-  border-radius: 300px 300px 0px 0px;
-  background: rgba(167, 33, 98, 0.15);
-  width: 33%;
-}
-.sec-pic-2 {
-  border-radius: 300px 300px 0px 0px;
-  background: rgba(5, 151, 160, 0.15);
-  margin-left: 20px;
-  margin-right: 20px;
-  width: 33%;
-}
-.sec-pic-3 {
-  border-radius: 300px 300px 0px 0px;
-  background: rgba(71, 125, 17, 0.15);
-  width: 33%;
+  gap: 12px;
+  padding-bottom: 20px;
+  margin-right: 25px;
 }
 .sec-pic-1,
 .sec-pic-2,
-.sec-pic-3 img {
-  height: 70%;
-  width: 70%;
-  display: flex;
-  align-items: center;
-  padding: 40px 0px;
+.sec-pic-3 {
+  border-radius: 300px 300px 0px 0px;
+  width: 350px;
+  height: 360px;
+  margin-right: 8px;
 }
-.sec-pic-caption {
-  color: #272727;
+.sec-pic-1 {
+  background-color: #f2dee7;
+}
+.sec-pic-2 {
+  background-color: #d9eff1;
+}
+.sec-pic-3 {
+  background-color: #e3ebdb;
+}
+.sec-pic-1 img {
+  height: 300px;
+  padding: 60px 20px 0px 45px;
+}
+.sec-pic-2 img {
+  height: 300px;
+  padding: 50px 0px 0px 20px;
+}
+.sec-pic-3 img {
+  height: 300px;
+  padding: 60px 0px 0px 60px;
+}
+.sec-pic-1 p,
+.sec-pic-2 p,
+.sec-pic-3 p {
   text-align: center;
+  text-decoration: underline;
+  font-weight: 600;
+  margin-top: 25px;
   font-size: 20px;
-  font-weight: 700;
-  text-decoration-line: underline;
 }
 
-/* third css styles */
+
+/* third css styles -- optional section*/
 .third {
   width: 70%;
   height: 220px;
@@ -170,29 +184,48 @@ nav a {
   justify-content: center;
   align-items: center;
 }
-.third p {
+.third-pic-1,
+.third-pic-2,
+.third-pic-3 p {
   color: rgba(39, 39, 39, 0.8);
   font-size: 16px;
   font-weight: 600;
 }
+.third-pic-1,
+.third-pic-2 img {
+  width: 30%;
+  height: 30%;
+}
+.third-pic-3 img {
+  width: 50%;
+  height: 50%;
+}
+.third-pic-1 p {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.third-pic-2 p {
+  padding-top: 15px;
+}
+.third-pic-3 p {
+  padding-top: 15px;
+}
 
-/* fourth css styles */
+
+/* fourth css styles -- hot deals -- roses  */
 .fourth {
-  margin-top: 180px;
-  border-radius: 8px;
-  background: rgba(229, 84, 115, 0.05);
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 70px 200px;
-  margin-bottom: 180px;
+    height: 440px;
+    width: 100%;
+    background-color: #FEF6F8;
+    margin-top: 80px;
+    justify-content: space-around;
+    align-items: center;
+    gap: 100px;
 }
 .fourth-heading {
-  color: #272727;
-  font-size: 27px;
-  font-weight: 800;
-  text-align: center;
-  margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 24px;
 }
 .fourth-writings {
   color: rgba(39, 39, 39, 0.6);
@@ -203,9 +236,9 @@ nav a {
   margin-bottom: 20px;
 }
 .fourth-description {
-  width: 50%;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
+  width: 400px;
+  padding-left: 350px;
 }
 .fourth-picture {
   width: 50%;
@@ -214,7 +247,7 @@ nav a {
 }
 .pink-color {
   color: #e55473;
-  font-size: 27px;
+  font-size: 24px;
   font-weight: 800;
 }
 .btn-sign {
@@ -230,28 +263,27 @@ nav a {
   border: 0;
 }
 
-/* fifth css styles */
+
+/* fifth css styles -- instagram section */
 .fifth-description {
   width: 410px;
-  align-items: center;
+  margin: auto;
   text-align: center;
   padding-top: 100px;
-  padding-bottom: 20px;
+  padding-bottom: 25px;
 }
-.fifth-heading {
-  color: #272727;
-  text-align: center;
-  font-size: 30px;
-  font-weight: 800;
+.fifth-description h2 {
+  font-weight: 700;
+  font-size: 35px;
 }
-.fifth-writings {
-  color: rgba(39, 39, 39, 0.6);
+.fifth-description p {
+  color: rgba(39, 39, 39, 0.60);
   margin-top: 7px;
   font-size: 15px;
   padding-top: 15px;
   padding-bottom: 5px;
   font-weight: 400;
-  line-height: 23px;
+  line-height: 20px;
 }
 .fifth-pictures {
   width: 60%;
@@ -270,7 +302,8 @@ nav a {
   padding-top: 20px;
 }
 
-/* sixth css styles */
+
+/* sixth css styles -- get the latest deals -- email */
 .sixth {
   width: 73.5%;
   height: 350px;
@@ -316,7 +349,6 @@ nav a {
   color: white;
   border: none;
 }
-
 .footer-section {
   height: 450px;
   display: flex;
